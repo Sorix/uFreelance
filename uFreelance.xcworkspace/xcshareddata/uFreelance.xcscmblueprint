@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AA55CCD0FA734AD888171C9F5A3DC97B5491446B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AA55CCD0FA734AD888171C9F5A3DC97B5491446B" : 9223372036854775807,
+    "02934E82FB9874237A048E8F46BAAF3A8CD120C3" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "EA8EE429-B076-40BD-99EF-7A2EF200A28D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AA55CCD0FA734AD888171C9F5A3DC97B5491446B" : "uFreelance\/",
+    "02934E82FB9874237A048E8F46BAAF3A8CD120C3" : "uFreelance\/Upwork\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "uFreelance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "uFreelance.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sorix\/Upwork",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02934E82FB9874237A048E8F46BAAF3A8CD120C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sorix\/uFreelance.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AA55CCD0FA734AD888171C9F5A3DC97B5491446B"
+    }
+  ]
+}
