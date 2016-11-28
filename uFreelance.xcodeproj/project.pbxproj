@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D909BA92771D6BF52DB7BA86 /* Pods_uFreelance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */; };
 		D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E21DE315EA00509C6C /* AppDelegate.swift */; };
 		D953C6E51DE315EA00509C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E41DE315EA00509C6C /* ViewController.swift */; };
 		D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E61DE315EA00509C6C /* uFreelance.xcdatamodeld */; };
 		D953C6EA1DE315EA00509C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953C6E91DE315EA00509C6C /* Assets.xcassets */; };
 		D953C6ED1DE315EA00509C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953C6EB1DE315EA00509C6C /* Main.storyboard */; };
+		D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.release.xcconfig"; sourceTree = "<group>"; };
+		5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.debug.xcconfig"; sourceTree = "<group>"; };
 		D953C6DF1DE315EA00509C6C /* uFreelance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFreelance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D953C6E21DE315EA00509C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D953C6E41DE315EA00509C6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		D953C6E91DE315EA00509C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D953C6EC1DE315EA00509C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D953C6EE1DE315EA00509C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootSplitViewController.swift; sourceTree = "<group>"; };
+		EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFreelance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D909BA92771D6BF52DB7BA86 /* Pods_uFreelance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49A582D6DE2AF416A87C7042 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F3620AD68B00BEC27359AD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */,
+				16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D953C6D61DE315EA00509C6C = {
 			isa = PBXGroup;
 			children = (
 				D953C6E11DE315EA00509C6C /* uFreelance */,
 				D953C6E01DE315EA00509C6C /* Products */,
+				8F3620AD68B00BEC27359AD3 /* Pods */,
+				49A582D6DE2AF416A87C7042 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +80,23 @@
 		D953C6E11DE315EA00509C6C /* uFreelance */ = {
 			isa = PBXGroup;
 			children = (
-				D953C6E21DE315EA00509C6C /* AppDelegate.swift */,
-				D953C6E41DE315EA00509C6C /* ViewController.swift */,
+				D9D587D71DEC687A0084B5AE /* Source */,
 				D953C6E91DE315EA00509C6C /* Assets.xcassets */,
 				D953C6EB1DE315EA00509C6C /* Main.storyboard */,
 				D953C6EE1DE315EA00509C6C /* Info.plist */,
 				D953C6E61DE315EA00509C6C /* uFreelance.xcdatamodeld */,
 			);
 			path = uFreelance;
+			sourceTree = "<group>";
+		};
+		D9D587D71DEC687A0084B5AE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D953C6E21DE315EA00509C6C /* AppDelegate.swift */,
+				D953C6E41DE315EA00509C6C /* ViewController.swift */,
+				D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */,
+			);
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D953C6F11DE315EA00509C6C /* Build configuration list for PBXNativeTarget "uFreelance" */;
 			buildPhases = (
+				F7CA5C909BFE5F7BAC3C2506 /* [CP] Check Pods Manifest.lock */,
 				D953C6DB1DE315EA00509C6C /* Sources */,
 				D953C6DC1DE315EA00509C6C /* Frameworks */,
 				D953C6DD1DE315EA00509C6C /* Resources */,
+				D37718A63DACF5757F0F6A5D /* [CP] Embed Pods Frameworks */,
+				070C20524D393FE4AB2C2B8C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +169,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		070C20524D393FE4AB2C2B8C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D37718A63DACF5757F0F6A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7CA5C909BFE5F7BAC3C2506 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D953C6DB1DE315EA00509C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +225,7 @@
 				D953C6E51DE315EA00509C6C /* ViewController.swift in Sources */,
 				D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */,
 				D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */,
+				D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,12 +335,15 @@
 		};
 		D953C6F21DE315EA00509C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7X2PJ6H6YM;
 				INFOPLIST_FILE = uFreelance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = uvasily.uFreelance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -262,12 +352,15 @@
 		};
 		D953C6F31DE315EA00509C6C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7X2PJ6H6YM;
 				INFOPLIST_FILE = uFreelance/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = uvasily.uFreelance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -293,6 +386,7 @@
 				D953C6F31DE315EA00509C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

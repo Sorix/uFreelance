@@ -1,4 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2657" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDAssignment" representedClassName="CDAssignment" syncable="YES" codeGenerationType="class">
+        <attribute name="ciphertext" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCompleted" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="feedbackComment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feedbackScore" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalCharged" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDJobProfile" inverseName="assignments" inverseEntity="CDJobProfile" syncable="YES"/>
+    </entity>
+    <entity name="CDBuyer" representedClassName="CDBuyer" syncable="YES" codeGenerationType="class">
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timezone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalHired" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalHours" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalJobsPosted" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="totalMoneyCharged" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDJobProfile" inverseName="buyer" inverseEntity="CDJobProfile" syncable="YES"/>
+    </entity>
+    <entity name="CDClient" representedClassName="CDClient" syncable="YES" codeGenerationType="class">
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="feedbackScore" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="jobsPosted" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="pastHires" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="reviewsCount" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="verified" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDJob" inverseName="client" inverseEntity="CDJob" syncable="YES"/>
+    </entity>
+    <entity name="CDJob" representedClassName="CDJob" syncable="YES" codeGenerationType="class">
+        <attribute name="budget" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="category" attributeType="String" syncable="YES"/>
+        <attribute name="created" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="id" attributeType="String" syncable="YES"/>
+        <attribute name="jobType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skills" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="snippet" attributeType="String" syncable="YES"/>
+        <attribute name="subcategory" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="url" attributeType="String" syncable="YES"/>
+        <attribute name="workload" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="client" maxCount="1" deletionRule="Cascade" destinationEntity="CDClient" inverseName="job" inverseEntity="CDClient" syncable="YES"/>
+        <relationship name="profile" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="CDJobProfile" inverseName="job" inverseEntity="CDJobProfile" syncable="YES"/>
+    </entity>
+    <entity name="CDJobProfile" representedClassName="CDJobProfile" syncable="YES" codeGenerationType="class">
+        <attribute name="attached" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ciphertext" attributeType="String" syncable="YES"/>
+        <attribute name="payTier" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="assignments" toMany="YES" deletionRule="Nullify" destinationEntity="CDAssignment" inverseName="profile" inverseEntity="CDAssignment" syncable="YES"/>
+        <relationship name="buyer" maxCount="1" deletionRule="Cascade" destinationEntity="CDBuyer" inverseName="profile" inverseEntity="CDBuyer" syncable="YES"/>
+        <relationship name="job" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDJob" inverseName="profile" inverseEntity="CDJob" syncable="YES"/>
+    </entity>
+    <entity name="CDSearchQuery" representedClassName="CDSearchQuery" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skills" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subcategory" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDAssignment" positionX="9" positionY="162" width="128" height="165"/>
+        <element name="CDBuyer" positionX="-9" positionY="135" width="128" height="150"/>
+        <element name="CDClient" positionX="-27" positionY="90" width="128" height="30"/>
+        <element name="CDJob" positionX="-63" positionY="-18" width="128" height="30"/>
+        <element name="CDJobProfile" positionX="-45" positionY="72" width="128" height="30"/>
+        <element name="CDSearchQuery" positionX="-27" positionY="135" width="128" height="105"/>
+    </elements>
 </model>
