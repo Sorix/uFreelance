@@ -11,14 +11,7 @@ import Upwork
 import OAuthSwift
 
 class UpworkService {
-	let upworkAPI: Upwork
-	let requestSigner: UpworkOAuthSigner
-	
-	static let shared = UpworkService()
-	
-	init() {
-		requestSigner = UpworkOAuthSigner(oauth: UpworkAuthorization.oauth)
-		upworkAPI = Upwork(delegate: requestSigner)
-	}
+	static let upworkAPI = Upwork(delegate: requestSigner)
+	static let requestSigner = UpworkOAuthSigner(oauth: UpworkAuthorization.oauth)
 }
 

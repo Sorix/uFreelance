@@ -16,9 +16,7 @@ class RootSplitViewController: NSSplitViewController {
         super.viewDidLoad()
         // Do view setup here.
 		
-		self.view.wantsLayer = true
-		self.view.window?.titlebarAppearsTransparent = true
-		self.view.window?.isMovableByWindowBackground = true
+		self.view.wantsLayer = true // avoiding visual glitches of blurred background
     }
 	
 	override func viewDidAppear() {
@@ -26,6 +24,10 @@ class RootSplitViewController: NSSplitViewController {
 		
 		if let storedCredentials = CredentialsStorage().credentials {
 			UpworkAuthorization.setOAuthCredentials(credentials: storedCredentials)
+			DispatchQueue.global().async {
+				print(UpworkService.upworkAPI.metadata.listCategories())
+			}
+			
 		} else {
 			UpworkAuthorization.beginLoginAlert(for: self) {
 				print("Completed")

@@ -19,11 +19,11 @@ class UpworkOAuthSigner: UpworkDelegate {
 	}
 	
 	func upwork(signAndSendRequestTo url: URL, withParameters parameters: [String : AnyObject]?) -> Result<Data> {
-		assert(Thread.isMainThread, "Possible thread block, don't call it from main thread")
+		assert(!Thread.isMainThread, "Possible thread block, don't call it from main thread")
 		
 		var result: Result<Data>?
 		
-		let semaphore = DispatchSemaphore(value: 1)
+		let semaphore = DispatchSemaphore(value: 0)
 		let _ = oauth.client.get(url.absoluteString, success: { (response) -> Void in
 			result = .success(response.data)
 			semaphore.signal()

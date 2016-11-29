@@ -25,7 +25,6 @@ class UpworkAuthorization {
 		oauth.client.credential.oauthTokenSecret = credentials.tokenSecret
 	}
 	
-	
 	/// Begin OAuth authorization process
 	///
 	/// - Parameters:
