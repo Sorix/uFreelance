@@ -16,5 +16,12 @@ class RootSplitViewController: NSSplitViewController {
 		
 		self.view.wantsLayer = true
     }
+	
+	override func viewDidAppear() {
+		super.viewDidAppear()
+		
+		let webViewController = WebViewWithProgressIndicatorController()
+		self.presentViewControllerAsSheet(webViewController)
+	}
     
 }

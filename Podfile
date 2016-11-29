@@ -7,6 +7,8 @@ target 'uFreelance' do
 
   pod 'KSPAutomaticHeightCalculationTableCellView'
 
+  pod 'OAuthSwift'
+
   # Pods for uFreelance
   pod 'Upwork', :path => 'Upwork'
 end

@@ -3,11 +3,11 @@ PODS:
   - OAuthSwift (1.1.0)
   - SwiftyJSON (3.1.3)
   - Upwork (0.2.0):
-    - OAuthSwift (~> 1.1.0)
     - SwiftyJSON (~> 3.1.0)
 
 DEPENDENCIES:
   - KSPAutomaticHeightCalculationTableCellView
+  - OAuthSwift
   - Upwork (from `Upwork`)
 
 EXTERNAL SOURCES:
@@ -18,8 +18,8 @@ SPEC CHECKSUMS:
   KSPAutomaticHeightCalculationTableCellView: f92bf94e36926514884e7f01e171120cfce1e797
   OAuthSwift: 7ec2c62274f6bdc30b1ba3b799c39a6fdcaea0e5
   SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
-  Upwork: d0792cd5877168865d1c96c4493aa2f51931bef4
+  Upwork: 50adbb679e49b87e4d6ad8ec5f41ce01e37313f2
 
-PODFILE CHECKSUM: 0c675bc21cf5520ac68e586f3fb7fcc30e4c895f
+PODFILE CHECKSUM: 0295b68f4196c1541be89d8bf3a00c55354f6027
 
 COCOAPODS: 1.1.1

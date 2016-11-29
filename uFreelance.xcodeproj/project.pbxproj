@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D909BA92771D6BF52DB7BA86 /* Pods_uFreelance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */; };
+		D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */; };
+		D9301CBE1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */; };
 		D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E21DE315EA00509C6C /* AppDelegate.swift */; };
 		D953C6E51DE315EA00509C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E41DE315EA00509C6C /* ViewController.swift */; };
 		D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E61DE315EA00509C6C /* uFreelance.xcdatamodeld */; };
@@ -19,6 +21,8 @@
 /* Begin PBXFileReference section */
 		16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.release.xcconfig"; sourceTree = "<group>"; };
 		5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.debug.xcconfig"; sourceTree = "<group>"; };
+		D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewWithProgressIndicatorController.swift; sourceTree = "<group>"; };
+		D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewWithProgressIndicatorController.xib; sourceTree = "<group>"; };
 		D953C6DF1DE315EA00509C6C /* uFreelance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFreelance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D953C6E21DE315EA00509C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D953C6E41DE315EA00509C6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,29 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D9301CB21DECED860091F903 /* DataController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DataController;
+			sourceTree = "<group>";
+		};
+		D9301CB31DECED910091F903 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		D9301CB41DECEE8E0091F903 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */,
+				D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
 		D953C6D61DE315EA00509C6C = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +119,9 @@
 		D9D587D71DEC687A0084B5AE /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D9301CB41DECEE8E0091F903 /* WebView */,
+				D9301CB31DECED910091F903 /* Auth */,
+				D9301CB21DECED860091F903 /* DataController */,
 				D953C6E21DE315EA00509C6C /* AppDelegate.swift */,
 				D953C6E41DE315EA00509C6C /* ViewController.swift */,
 				D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */,
@@ -162,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9301CBE1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib in Resources */,
 				D953C6EA1DE315EA00509C6C /* Assets.xcassets in Resources */,
 				D953C6ED1DE315EA00509C6C /* Main.storyboard in Resources */,
 			);
@@ -225,6 +256,7 @@
 				D953C6E51DE315EA00509C6C /* ViewController.swift in Sources */,
 				D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */,
 				D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */,
+				D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */,
 				D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WebViewWithProgressIndicatorController" customModule="uFreelance" customModuleProvider="target">
+            <connections>
+                <outlet property="box" destination="rbp-xL-SZi" id="NOu-sg-TnR"/>
+                <outlet property="button" destination="ooo-1W-XGW" id="4Si-Du-dva"/>
+                <outlet property="progressIndicator" destination="rWT-HP-KWz" id="naM-Oe-JYv"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="466"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <box boxType="custom" title="Box" translatesAutoresizingMaskIntoConstraints="NO" id="rbp-xL-SZi">
+                    <rect key="frame" x="20" y="61" width="440" height="385"/>
+                    <view key="contentView" id="pDf-kR-Q4k">
+                        <rect key="frame" x="1" y="1" width="438" height="383"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <color key="borderColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                    <color key="fillColor" red="0.88617795705795288" green="0.88633018732070923" blue="0.88616830110549927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </box>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ooo-1W-XGW">
+                    <rect key="frame" x="14" y="13" width="82" height="32"/>
+                    <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="BTq-1i-cJX">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                        <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                    </buttonCell>
+                    <connections>
+                        <action selector="buttonClicked:" target="-2" id="RNg-LW-X53"/>
+                    </connections>
+                </button>
+                <progressIndicator wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="rWT-HP-KWz">
+                    <rect key="frame" x="444" y="23" width="16" height="16"/>
+                </progressIndicator>
+            </subviews>
+            <constraints>
+                <constraint firstItem="rbp-xL-SZi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Bce-Tf-fTG"/>
+                <constraint firstAttribute="bottom" secondItem="ooo-1W-XGW" secondAttribute="bottom" constant="20" id="PQs-1p-ONj"/>
+                <constraint firstItem="ooo-1W-XGW" firstAttribute="top" secondItem="rbp-xL-SZi" secondAttribute="bottom" constant="20" id="Pyt-la-Zgs"/>
+                <constraint firstAttribute="trailing" secondItem="rWT-HP-KWz" secondAttribute="trailing" constant="20" id="YzL-gs-taH"/>
+                <constraint firstAttribute="trailing" secondItem="rbp-xL-SZi" secondAttribute="trailing" constant="20" id="bcQ-Jv-Wvj"/>
+                <constraint firstItem="rWT-HP-KWz" firstAttribute="centerY" secondItem="ooo-1W-XGW" secondAttribute="centerY" id="kgg-Ka-GlV"/>
+                <constraint firstItem="rbp-xL-SZi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="kwT-zZ-kTQ"/>
+                <constraint firstItem="ooo-1W-XGW" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="lYp-pY-ysi"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="266"/>
+        </customView>
+    </objects>
+</document>
