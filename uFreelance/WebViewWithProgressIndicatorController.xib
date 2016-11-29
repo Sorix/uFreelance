@@ -11,6 +11,7 @@
             <connections>
                 <outlet property="box" destination="rbp-xL-SZi" id="NOu-sg-TnR"/>
                 <outlet property="button" destination="ooo-1W-XGW" id="4Si-Du-dva"/>
+                <outlet property="minimumWebViewHeightConstraint" destination="bsi-HZ-HjQ" id="wXf-6R-FZe"/>
                 <outlet property="progressIndicator" destination="rWT-HP-KWz" id="naM-Oe-JYv"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
@@ -27,6 +28,9 @@
                         <rect key="frame" x="1" y="1" width="438" height="383"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="385" id="bsi-HZ-HjQ"/>
+                    </constraints>
                     <color key="borderColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                     <color key="fillColor" red="0.88617795705795288" green="0.88633018732070923" blue="0.88616830110549927" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </box>

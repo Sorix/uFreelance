@@ -11,13 +11,18 @@ import Cocoa
 import OAuthSwift
 import WebKit
 
+/// ViewController with Upwork login webview responsible for authentication flow
 class LoginWebViewController: WebViewWithProgressIndicatorController, OAuthSwiftURLHandlerType {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		self.url = URL(string: "https://www.upwork.com/login")!
+		self.minimumWebViewHeightConstraint.constant = 530
 	}
 	
+	convenience init() {
+		self.init(autoload: URL(string: "https://www.upwork.com/login")!)
+	}
+
 	func handle(_ url: URL) {
 		let req = URLRequest(url: url)
 		webView.load(req)

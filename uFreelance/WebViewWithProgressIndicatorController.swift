@@ -9,15 +9,25 @@
 import Cocoa
 import WebKit
 
+/// Simple NSViewController with embedded WKWebView and loading progress indicicator.
+///
+/// Don't forget to set values:
+/// * `minimumWebViewHeightConstraint.constant`: if you want to set minimum height of webView
 class WebViewWithProgressIndicatorController: NSViewController {
 	
 	@IBOutlet weak var box: NSBox!
 	@IBOutlet weak var progressIndicator: NSProgressIndicator!
 	@IBOutlet weak var button: NSButton!
+	@IBOutlet weak var minimumWebViewHeightConstraint: NSLayoutConstraint!
 	weak var webView: WKWebView!
-	
+
 	var url: URL?
 
+	convenience init(autoload: URL) {
+		self.init()
+		self.url = autoload
+	}
+	
 	convenience init() {
 		self.init(nibName: "WebViewWithProgressIndicatorController", bundle: nil)!
 	}
@@ -25,8 +35,7 @@ class WebViewWithProgressIndicatorController: NSViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do view setup here.
-		
-		addWebView()
+
 	}
 	
 	override func viewDidAppear() {
@@ -42,12 +51,15 @@ class WebViewWithProgressIndicatorController: NSViewController {
 
 	override func viewWillAppear() {
 		super.viewWillAppear()
+		addWebView()
+		
 		webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
 	}
 	
 	override func viewWillDisappear() {
 		super.viewWillDisappear()
 		webView.removeObserver(self, forKeyPath: "estimatedProgress")
+		webView.removeFromSuperview()
 	}
 	
 	override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {

@@ -10,7 +10,10 @@
 		D904B7E01DEDB412002B0A0E /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */; };
 		D904B7E31DEDB8CE002B0A0E /* UpworkAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */; };
 		D904B7E71DEDBF64002B0A0E /* CredentialsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */; };
+		D904B7E91DEDCE58002B0A0E /* UpworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7E81DEDCE58002B0A0E /* UpworkService.swift */; };
+		D904B7EB1DEDD7C6002B0A0E /* RootWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7EA1DEDD7C6002B0A0E /* RootWindowController.swift */; };
 		D909BA92771D6BF52DB7BA86 /* Pods_uFreelance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */; };
+		D910A4921DEE0E6000FA1893 /* UpworkOAuthSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910A4911DEE0E6000FA1893 /* UpworkOAuthSigner.swift */; };
 		D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */; };
 		D9301CBE1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */; };
 		D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E21DE315EA00509C6C /* AppDelegate.swift */; };
@@ -27,6 +30,9 @@
 		D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
 		D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkAuthorization.swift; sourceTree = "<group>"; };
 		D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsStorage.swift; sourceTree = "<group>"; };
+		D904B7E81DEDCE58002B0A0E /* UpworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkService.swift; sourceTree = "<group>"; };
+		D904B7EA1DEDD7C6002B0A0E /* RootWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWindowController.swift; sourceTree = "<group>"; };
+		D910A4911DEE0E6000FA1893 /* UpworkOAuthSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkOAuthSigner.swift; sourceTree = "<group>"; };
 		D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewWithProgressIndicatorController.swift; sourceTree = "<group>"; };
 		D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewWithProgressIndicatorController.xib; sourceTree = "<group>"; };
 		D953C6DF1DE315EA00509C6C /* uFreelance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFreelance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +78,20 @@
 		D904B7E11DEDB8BC002B0A0E /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */,
-				D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */,
+				D904B7E81DEDCE58002B0A0E /* UpworkService.swift */,
+				D910A4931DEE0EC800FA1893 /* Authorization */,
 			);
 			name = Class;
+			sourceTree = "<group>";
+		};
+		D910A4931DEE0EC800FA1893 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */,
+				D910A4911DEE0E6000FA1893 /* UpworkOAuthSigner.swift */,
+				D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */,
+			);
+			name = Authorization;
 			sourceTree = "<group>";
 		};
 		D9301CB21DECED860091F903 /* DataController */ = {
@@ -83,13 +99,6 @@
 			children = (
 			);
 			name = DataController;
-			sourceTree = "<group>";
-		};
-		D9301CB31DECED910091F903 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Auth;
 			sourceTree = "<group>";
 		};
 		D9301CB41DECEE8E0091F903 /* WebViewWithProgressIndicator */ = {
@@ -104,6 +113,8 @@
 		D9301CBF1DED096A0091F903 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */,
+				D904B7EA1DEDD7C6002B0A0E /* RootWindowController.swift */,
 				D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */,
 				D9301CB41DECEE8E0091F903 /* WebViewWithProgressIndicator */,
 			);
@@ -145,11 +156,9 @@
 			children = (
 				D904B7E11DEDB8BC002B0A0E /* Class */,
 				D9301CBF1DED096A0091F903 /* ViewControllers */,
-				D9301CB31DECED910091F903 /* Auth */,
 				D9301CB21DECED860091F903 /* DataController */,
 				D953C6E21DE315EA00509C6C /* AppDelegate.swift */,
 				D953C6E41DE315EA00509C6C /* ViewController.swift */,
-				D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -281,9 +290,12 @@
 				D953C6E51DE315EA00509C6C /* ViewController.swift in Sources */,
 				D904B7E01DEDB412002B0A0E /* LoginWebViewController.swift in Sources */,
 				D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */,
+				D910A4921DEE0E6000FA1893 /* UpworkOAuthSigner.swift in Sources */,
+				D904B7EB1DEDD7C6002B0A0E /* RootWindowController.swift in Sources */,
 				D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */,
 				D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */,
 				D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */,
+				D904B7E91DEDCE58002B0A0E /* UpworkService.swift in Sources */,
 				D904B7E71DEDBF64002B0A0E /* CredentialsStorage.swift in Sources */,
 				D904B7E31DEDB8CE002B0A0E /* UpworkAuthorization.swift in Sources */,
 			);

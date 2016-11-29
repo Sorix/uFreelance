@@ -10,19 +10,27 @@ import Cocoa
 
 class RootSplitViewController: NSSplitViewController {
 	
-	var authorization = UpworkAuthorization()
+	var authorization: UpworkAuthorization?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
 		
 		self.view.wantsLayer = true
+		self.view.window?.titlebarAppearsTransparent = true
+		self.view.window?.isMovableByWindowBackground = true
     }
 	
 	override func viewDidAppear() {
 		super.viewDidAppear()
-
-		authorization.beginLoginAlert(for: self)
+		
+		if let storedCredentials = CredentialsStorage().credentials {
+			UpworkAuthorization.setOAuthCredentials(credentials: storedCredentials)
+		} else {
+			UpworkAuthorization.beginLoginAlert(for: self) {
+				print("Completed")
+			}
+		}
 	}
     
 }
