@@ -9,15 +9,19 @@
 import Cocoa
 import WebKit
 
-class WebViewWithProgressIndicatorController: NSViewController, WKNavigationDelegate {
+class WebViewWithProgressIndicatorController: NSViewController {
 	
 	@IBOutlet weak var box: NSBox!
 	@IBOutlet weak var progressIndicator: NSProgressIndicator!
 	@IBOutlet weak var button: NSButton!
 	weak var webView: WKWebView!
 	
-	var url: URL? = URL(string: "https://google.com")
+	var url: URL?
 
+	convenience init() {
+		self.init(nibName: "WebViewWithProgressIndicatorController", bundle: nil)!
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do view setup here.
@@ -91,8 +95,8 @@ class WebViewWithProgressIndicatorController: NSViewController, WKNavigationDele
 }
 
 
-extension WebViewWithProgressIndicatorController {
-	func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+extension WebViewWithProgressIndicatorController: WKNavigationDelegate {
+	func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
 		self.setProgress(0)
 	}
 	

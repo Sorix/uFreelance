@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D904B7E01DEDB412002B0A0E /* LoginWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */; };
+		D904B7E31DEDB8CE002B0A0E /* UpworkAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */; };
+		D904B7E71DEDBF64002B0A0E /* CredentialsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */; };
 		D909BA92771D6BF52DB7BA86 /* Pods_uFreelance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */; };
 		D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */; };
 		D9301CBE1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.release.xcconfig"; sourceTree = "<group>"; };
 		5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.debug.xcconfig"; sourceTree = "<group>"; };
+		D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
+		D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkAuthorization.swift; sourceTree = "<group>"; };
+		D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsStorage.swift; sourceTree = "<group>"; };
 		D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewWithProgressIndicatorController.swift; sourceTree = "<group>"; };
 		D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewWithProgressIndicatorController.xib; sourceTree = "<group>"; };
 		D953C6DF1DE315EA00509C6C /* uFreelance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFreelance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +69,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D904B7E11DEDB8BC002B0A0E /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */,
+				D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 		D9301CB21DECED860091F903 /* DataController */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,13 +92,22 @@
 			name = Auth;
 			sourceTree = "<group>";
 		};
-		D9301CB41DECEE8E0091F903 /* WebView */ = {
+		D9301CB41DECEE8E0091F903 /* WebViewWithProgressIndicator */ = {
 			isa = PBXGroup;
 			children = (
 				D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */,
 				D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */,
 			);
-			name = WebView;
+			name = WebViewWithProgressIndicator;
+			sourceTree = "<group>";
+		};
+		D9301CBF1DED096A0091F903 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */,
+				D9301CB41DECEE8E0091F903 /* WebViewWithProgressIndicator */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D953C6D61DE315EA00509C6C = {
@@ -119,7 +143,8 @@
 		D9D587D71DEC687A0084B5AE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D9301CB41DECEE8E0091F903 /* WebView */,
+				D904B7E11DEDB8BC002B0A0E /* Class */,
+				D9301CBF1DED096A0091F903 /* ViewControllers */,
 				D9301CB31DECED910091F903 /* Auth */,
 				D9301CB21DECED860091F903 /* DataController */,
 				D953C6E21DE315EA00509C6C /* AppDelegate.swift */,
@@ -254,10 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D953C6E51DE315EA00509C6C /* ViewController.swift in Sources */,
+				D904B7E01DEDB412002B0A0E /* LoginWebViewController.swift in Sources */,
 				D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */,
 				D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */,
 				D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */,
 				D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */,
+				D904B7E71DEDBF64002B0A0E /* CredentialsStorage.swift in Sources */,
+				D904B7E31DEDB8CE002B0A0E /* UpworkAuthorization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

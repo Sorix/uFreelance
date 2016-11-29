@@ -9,6 +9,8 @@
 import Cocoa
 
 class RootSplitViewController: NSSplitViewController {
+	
+	var authorization = UpworkAuthorization()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +21,8 @@ class RootSplitViewController: NSSplitViewController {
 	
 	override func viewDidAppear() {
 		super.viewDidAppear()
-		
-		let webViewController = WebViewWithProgressIndicatorController()
-		self.presentViewControllerAsSheet(webViewController)
+
+		authorization.beginLoginAlert(for: self)
 	}
     
 }
