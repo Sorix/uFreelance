@@ -14,6 +14,8 @@
 		D904B7EB1DEDD7C6002B0A0E /* RootWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B7EA1DEDD7C6002B0A0E /* RootWindowController.swift */; };
 		D909BA92771D6BF52DB7BA86 /* Pods_uFreelance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */; };
 		D910A4921DEE0E6000FA1893 /* UpworkOAuthSigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910A4911DEE0E6000FA1893 /* UpworkOAuthSigner.swift */; };
+		D910A4A91DEE1EE400FA1893 /* uFreelanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910A4A81DEE1EE400FA1893 /* uFreelanceUITests.swift */; };
+		D910A4B71DEE248500FA1893 /* uFreelanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D910A4B61DEE248500FA1893 /* uFreelanceTests.swift */; };
 		D9301CB71DECEF320091F903 /* WebViewWithProgressIndicatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */; };
 		D9301CBE1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */; };
 		D953C6E31DE315EA00509C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E21DE315EA00509C6C /* AppDelegate.swift */; };
@@ -21,18 +23,46 @@
 		D953C6E81DE315EA00509C6C /* uFreelance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D953C6E61DE315EA00509C6C /* uFreelance.xcdatamodeld */; };
 		D953C6EA1DE315EA00509C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D953C6E91DE315EA00509C6C /* Assets.xcassets */; };
 		D953C6ED1DE315EA00509C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D953C6EB1DE315EA00509C6C /* Main.storyboard */; };
+		D9A5AE561DEE4B1900726640 /* UpworkToCoreDataConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A5AE551DEE4B1900726640 /* UpworkToCoreDataConverter.swift */; };
 		D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */; };
+		F56FD49ACCB6A81A87364543 /* Pods_uFreelanceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BDCC42517457B641E6B6765 /* Pods_uFreelanceTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D910A4AB1DEE1EE400FA1893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D953C6D71DE315EA00509C6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D953C6DE1DE315EA00509C6C;
+			remoteInfo = uFreelance;
+		};
+		D910A4B91DEE248500FA1893 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D953C6D71DE315EA00509C6C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D953C6DE1DE315EA00509C6C;
+			remoteInfo = uFreelance;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		07EF4B6F4D652C4B978DACBF /* Pods-uFreelanceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelanceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelanceTests/Pods-uFreelanceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.release.xcconfig"; sourceTree = "<group>"; };
 		5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelance.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance.debug.xcconfig"; sourceTree = "<group>"; };
+		7A842FF309E998A397FDA54A /* Pods-uFreelanceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFreelanceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFreelanceTests/Pods-uFreelanceTests.release.xcconfig"; sourceTree = "<group>"; };
+		8BDCC42517457B641E6B6765 /* Pods_uFreelanceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFreelanceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904B7DF1DEDB412002B0A0E /* LoginWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWebViewController.swift; sourceTree = "<group>"; };
 		D904B7E21DEDB8CE002B0A0E /* UpworkAuthorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkAuthorization.swift; sourceTree = "<group>"; };
 		D904B7E61DEDBF64002B0A0E /* CredentialsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CredentialsStorage.swift; sourceTree = "<group>"; };
 		D904B7E81DEDCE58002B0A0E /* UpworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkService.swift; sourceTree = "<group>"; };
 		D904B7EA1DEDD7C6002B0A0E /* RootWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWindowController.swift; sourceTree = "<group>"; };
 		D910A4911DEE0E6000FA1893 /* UpworkOAuthSigner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkOAuthSigner.swift; sourceTree = "<group>"; };
+		D910A4A61DEE1EE400FA1893 /* uFreelanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFreelanceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D910A4A81DEE1EE400FA1893 /* uFreelanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFreelanceUITests.swift; sourceTree = "<group>"; };
+		D910A4AA1DEE1EE400FA1893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D910A4B41DEE248500FA1893 /* uFreelanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uFreelanceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D910A4B61DEE248500FA1893 /* uFreelanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uFreelanceTests.swift; sourceTree = "<group>"; };
+		D910A4B81DEE248500FA1893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9301CB51DECEF320091F903 /* WebViewWithProgressIndicatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewWithProgressIndicatorController.swift; sourceTree = "<group>"; };
 		D9301CBC1DECFB180091F903 /* WebViewWithProgressIndicatorController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewWithProgressIndicatorController.xib; sourceTree = "<group>"; };
 		D953C6DF1DE315EA00509C6C /* uFreelance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFreelance.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +72,27 @@
 		D953C6E91DE315EA00509C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D953C6EC1DE315EA00509C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D953C6EE1DE315EA00509C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A5AE551DEE4B1900726640 /* UpworkToCoreDataConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpworkToCoreDataConverter.swift; sourceTree = "<group>"; };
 		D9D587D51DEC68720084B5AE /* RootSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootSplitViewController.swift; sourceTree = "<group>"; };
 		EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFreelance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D910A4A31DEE1EE400FA1893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D910A4B11DEE248500FA1893 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F56FD49ACCB6A81A87364543 /* Pods_uFreelanceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D953C6DC1DE315EA00509C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EB3C994B1010C7A66B23CB21 /* Pods_uFreelance.framework */,
+				8BDCC42517457B641E6B6765 /* Pods_uFreelanceTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -71,6 +118,8 @@
 			children = (
 				5E694DD7675F5286EAC18DE7 /* Pods-uFreelance.debug.xcconfig */,
 				16F82EDF28E9E4CFA7F2CD10 /* Pods-uFreelance.release.xcconfig */,
+				07EF4B6F4D652C4B978DACBF /* Pods-uFreelanceTests.debug.xcconfig */,
+				7A842FF309E998A397FDA54A /* Pods-uFreelanceTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -94,9 +143,28 @@
 			name = Authorization;
 			sourceTree = "<group>";
 		};
+		D910A4A71DEE1EE400FA1893 /* uFreelanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D910A4A81DEE1EE400FA1893 /* uFreelanceUITests.swift */,
+				D910A4AA1DEE1EE400FA1893 /* Info.plist */,
+			);
+			path = uFreelanceUITests;
+			sourceTree = "<group>";
+		};
+		D910A4B51DEE248500FA1893 /* uFreelanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				D910A4B61DEE248500FA1893 /* uFreelanceTests.swift */,
+				D910A4B81DEE248500FA1893 /* Info.plist */,
+			);
+			path = uFreelanceTests;
+			sourceTree = "<group>";
+		};
 		D9301CB21DECED860091F903 /* DataController */ = {
 			isa = PBXGroup;
 			children = (
+				D9A5AE551DEE4B1900726640 /* UpworkToCoreDataConverter.swift */,
 			);
 			name = DataController;
 			sourceTree = "<group>";
@@ -125,6 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				D953C6E11DE315EA00509C6C /* uFreelance */,
+				D910A4B51DEE248500FA1893 /* uFreelanceTests */,
+				D910A4A71DEE1EE400FA1893 /* uFreelanceUITests */,
 				D953C6E01DE315EA00509C6C /* Products */,
 				8F3620AD68B00BEC27359AD3 /* Pods */,
 				49A582D6DE2AF416A87C7042 /* Frameworks */,
@@ -135,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				D953C6DF1DE315EA00509C6C /* uFreelance.app */,
+				D910A4A61DEE1EE400FA1893 /* uFreelanceUITests.xctest */,
+				D910A4B41DEE248500FA1893 /* uFreelanceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,6 +238,45 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D910A4A51DEE1EE400FA1893 /* uFreelanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D910A4AD1DEE1EE400FA1893 /* Build configuration list for PBXNativeTarget "uFreelanceUITests" */;
+			buildPhases = (
+				D910A4A21DEE1EE400FA1893 /* Sources */,
+				D910A4A31DEE1EE400FA1893 /* Frameworks */,
+				D910A4A41DEE1EE400FA1893 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D910A4AC1DEE1EE400FA1893 /* PBXTargetDependency */,
+			);
+			name = uFreelanceUITests;
+			productName = uFreelanceUITests;
+			productReference = D910A4A61DEE1EE400FA1893 /* uFreelanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D910A4B31DEE248500FA1893 /* uFreelanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D910A4BB1DEE248500FA1893 /* Build configuration list for PBXNativeTarget "uFreelanceTests" */;
+			buildPhases = (
+				00576C9786B8FBF18B1259D1 /* [CP] Check Pods Manifest.lock */,
+				D910A4B01DEE248500FA1893 /* Sources */,
+				D910A4B11DEE248500FA1893 /* Frameworks */,
+				D910A4B21DEE248500FA1893 /* Resources */,
+				041CAB101965B22AEE4C518B /* [CP] Embed Pods Frameworks */,
+				6801FB545732735B671BE800 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D910A4BA1DEE248500FA1893 /* PBXTargetDependency */,
+			);
+			name = uFreelanceTests;
+			productName = uFreelanceTests;
+			productReference = D910A4B41DEE248500FA1893 /* uFreelanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D953C6DE1DE315EA00509C6C /* uFreelance */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D953C6F11DE315EA00509C6C /* Build configuration list for PBXNativeTarget "uFreelance" */;
@@ -196,6 +307,17 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Vasily Ulianov";
 				TargetAttributes = {
+					D910A4A51DEE1EE400FA1893 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7X2PJ6H6YM;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D953C6DE1DE315EA00509C6C;
+					};
+					D910A4B31DEE248500FA1893 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D953C6DE1DE315EA00509C6C;
+					};
 					D953C6DE1DE315EA00509C6C = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7X2PJ6H6YM;
@@ -217,11 +339,27 @@
 			projectRoot = "";
 			targets = (
 				D953C6DE1DE315EA00509C6C /* uFreelance */,
+				D910A4B31DEE248500FA1893 /* uFreelanceTests */,
+				D910A4A51DEE1EE400FA1893 /* uFreelanceUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D910A4A41DEE1EE400FA1893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D910A4B21DEE248500FA1893 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D953C6DD1DE315EA00509C6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,6 +373,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		00576C9786B8FBF18B1259D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		041CAB101965B22AEE4C518B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFreelanceTests/Pods-uFreelanceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		070C20524D393FE4AB2C2B8C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +416,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFreelance/Pods-uFreelance-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6801FB545732735B671BE800 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFreelanceTests/Pods-uFreelanceTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D37718A63DACF5757F0F6A5D /* [CP] Embed Pods Frameworks */ = {
@@ -283,6 +466,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D910A4A21DEE1EE400FA1893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D910A4A91DEE1EE400FA1893 /* uFreelanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D910A4B01DEE248500FA1893 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D910A4B71DEE248500FA1893 /* uFreelanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D953C6DB1DE315EA00509C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,11 +496,25 @@
 				D9D587D61DEC68720084B5AE /* RootSplitViewController.swift in Sources */,
 				D904B7E91DEDCE58002B0A0E /* UpworkService.swift in Sources */,
 				D904B7E71DEDBF64002B0A0E /* CredentialsStorage.swift in Sources */,
+				D9A5AE561DEE4B1900726640 /* UpworkToCoreDataConverter.swift in Sources */,
 				D904B7E31DEDB8CE002B0A0E /* UpworkAuthorization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D910A4AC1DEE1EE400FA1893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D953C6DE1DE315EA00509C6C /* uFreelance */;
+			targetProxy = D910A4AB1DEE1EE400FA1893 /* PBXContainerItemProxy */;
+		};
+		D910A4BA1DEE248500FA1893 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D953C6DE1DE315EA00509C6C /* uFreelance */;
+			targetProxy = D910A4B91DEE248500FA1893 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D953C6EB1DE315EA00509C6C /* Main.storyboard */ = {
@@ -315,6 +528,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D910A4AE1DEE1EE400FA1893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7X2PJ6H6YM;
+				INFOPLIST_FILE = uFreelanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uvasily.uFreelanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = uFreelance;
+			};
+			name = Debug;
+		};
+		D910A4AF1DEE1EE400FA1893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7X2PJ6H6YM;
+				INFOPLIST_FILE = uFreelanceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uvasily.uFreelanceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = uFreelance;
+			};
+			name = Release;
+		};
+		D910A4BC1DEE248500FA1893 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EF4B6F4D652C4B978DACBF /* Pods-uFreelanceTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = uFreelanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uvasily.uFreelanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uFreelance.app/Contents/MacOS/uFreelance";
+			};
+			name = Debug;
+		};
+		D910A4BD1DEE248500FA1893 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A842FF309E998A397FDA54A /* Pods-uFreelanceTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = uFreelanceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = uvasily.uFreelanceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uFreelance.app/Contents/MacOS/uFreelance";
+			};
+			name = Release;
+		};
 		D953C6EF1DE315EA00509C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -442,6 +717,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D910A4AD1DEE1EE400FA1893 /* Build configuration list for PBXNativeTarget "uFreelanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D910A4AE1DEE1EE400FA1893 /* Debug */,
+				D910A4AF1DEE1EE400FA1893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D910A4BB1DEE248500FA1893 /* Build configuration list for PBXNativeTarget "uFreelanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D910A4BC1DEE248500FA1893 /* Debug */,
+				D910A4BD1DEE248500FA1893 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D953C6DA1DE315EA00509C6C /* Build configuration list for PBXProject "uFreelance" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

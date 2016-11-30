@@ -40,6 +40,10 @@ class CredentialsStorage {
 	var credentials: OAuthCredentials? {
 		get {
 			guard let token = self.token, let tokenSecret = self.tokenSecret else { return nil }
+			
+			print(token)
+			print(tokenSecret)
+			
 			return OAuthCredentials(token: token, tokenSecret: tokenSecret)
 		}
 		set {
